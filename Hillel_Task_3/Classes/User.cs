@@ -8,5 +8,11 @@ namespace Hillel_Task_3
 {
     internal class User
     {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        private int Age { get; set; }
+
+        
+
     }
 }
