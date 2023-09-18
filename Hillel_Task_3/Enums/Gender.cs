@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hillel_Task_3
+namespace Hillel_Task_3.Enums
 {
-    internal class Gender
+    public enum Gender
     {
+        Male = 1,
+        Female = 2,
     }
 }
