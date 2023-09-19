@@ -26,7 +26,7 @@ namespace Hillel_Task_3.Classes
 
         public override string ToString() 
         {
-            if (Age < 10)
+            if (Age <= 10)
             {
                 return $"Hi, my name is {FirstName} and last name {LastName}. I am a baby. I am {ChoiseGend}";
             }

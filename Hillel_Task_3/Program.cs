@@ -65,7 +65,7 @@ namespace Hillel_Task_3
 
             bool IsCorrectNameSurname(string inputStr)
         {
-            var pattern = new Regex("[A-Za-z]+");
+            var pattern = new Regex("[A-Za-z]+$");
             return pattern.IsMatch(inputStr);
 
         }
