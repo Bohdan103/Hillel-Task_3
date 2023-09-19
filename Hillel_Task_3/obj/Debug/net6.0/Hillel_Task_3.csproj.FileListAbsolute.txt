@@ -1,0 +1,14 @@
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\bin\Debug\net6.0\Hillel_Task_3.exe
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\bin\Debug\net6.0\Hillel_Task_3.deps.json
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\bin\Debug\net6.0\Hillel_Task_3.runtimeconfig.json
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\bin\Debug\net6.0\Hillel_Task_3.dll
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\bin\Debug\net6.0\Hillel_Task_3.pdb
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\obj\Debug\net6.0\Hillel_Task_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\obj\Debug\net6.0\Hillel_Task_3.AssemblyInfoInputs.cache
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\obj\Debug\net6.0\Hillel_Task_3.AssemblyInfo.cs
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\obj\Debug\net6.0\Hillel_Task_3.csproj.CoreCompileInputs.cache
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\obj\Debug\net6.0\Hillel_Task_3.dll
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\obj\Debug\net6.0\refint\Hillel_Task_3.dll
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\obj\Debug\net6.0\Hillel_Task_3.pdb
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\obj\Debug\net6.0\Hillel_Task_3.genruntimeconfig.cache
+C:\Users\Богдан\Desktop\C#\Hillel_Task_3\Hillel_Task_3\obj\Debug\net6.0\ref\Hillel_Task_3.dll
