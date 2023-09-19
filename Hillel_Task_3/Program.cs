@@ -12,12 +12,11 @@ namespace Hillel_Task_3
         
         
         static void Main(string[] args)
-        {
-            int checAge = 0;            
+        {                       
             int age = 0;
             GetUserAge();               
 
-            User newUs = new User(checAge);
+            User newUs = new User(age);
           
             GetUserName();
 
@@ -93,16 +92,22 @@ namespace Hillel_Task_3
 
             void GetUserAge()
             {
-                Console.Write("Enter your age: ");
-                age = Convert.ToInt32(Console.ReadLine());
-                if (age > 0 && age < 120)
+                try
                 {
-                    checAge = age;
+                    Console.Write("Enter your age: ");
+                    age = Convert.ToInt32(Console.ReadLine());
                 }
-                else
-                {                  
+                catch 
+                {
+                    Console.WriteLine("Error! Need enter onle numbers!");
                     GetUserAge();
                 }
+
+                if (age < 1 || age > 120)
+                {
+                    Console.WriteLine("Error! Pleace try again.");
+                    GetUserAge();
+                }                
             }
 
         }
