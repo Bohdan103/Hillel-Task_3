@@ -1,26 +1,81 @@
 ﻿using Hillel_Task_3.Classes;
 using Hillel_Task_3.Enums;
+using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
 
 namespace Hillel_Task_3
 {
     internal class Program
     {
+        
+        
+        
+        
         static void Main(string[] args)
-        {   
+        {
+            int checAge = 0;            
             int age = 0;
-            
+            GetUserAge();               
+
+            User newUs = new User(checAge);
+          
+            GetUserName();
+
+            GetLastName();            
+
+            ChoiseGender(newUs);
+            var getInf = newUs.ToString();
+            Console.WriteLine(getInf);
+
+        
+            void GetUserName()
+        {
             Console.Write("Enter your Name: ");
             string firstName = Console.ReadLine();
-            Console.Write("Enter your LastName: ");
-            string lastName = Console.ReadLine();
+
+            if (IsCorrectNameSurname(firstName))
+            {
+                newUs.FirstName = firstName;
+            }
+            else
+            {
+                Console.WriteLine("Error! Please enter only symbols(A-Z): ");
+                GetUserName();
+            }
+            
+        }
+
+            void GetLastName()
+            {
+                Console.Write("Enter your LastName: ");
+                string lastName = Console.ReadLine();
+
+                if (IsCorrectNameSurname(lastName))
+                {
+                    newUs.LastName = lastName;
+                }
+                else
+                {
+                    Console.WriteLine("Error! Please enter only symbols(A-Z): ");
+                    GetLastName();
+                }
+               
+            }
 
 
-            Console.Write("Enter your age: ");
-            age = Convert.ToInt32(Console.ReadLine());
+            bool IsCorrectNameSurname(string inputStr)
+        {
+            var pattern = new Regex("[A-Za-z]+");
+            return pattern.IsMatch(inputStr);
 
-            void ChoiseGender(int gender, User newUs)
-        {            
-            if (gender == 1)
+        }
+
+            void ChoiseGender(User newUs)
+        {
+             Console.WriteLine("Choose your gender, press 1 if you male or 2 if you female: ");
+             int gender = Convert.ToInt32(Console.ReadLine());
+
+                if (gender == 1)
             {
                 newUs.ChoiseGend = Gender.Male;
             }
@@ -32,64 +87,28 @@ namespace Hillel_Task_3
             {
                 Console.Write("Error, pleace try again: ");
                 gender = Convert.ToInt32(Console.ReadLine());
-                ChoiseGender(gender, newUs);
-                
+                ChoiseGender(newUs);                
              }
         }
-            
 
-            User newUs = new User(age);
-
-            newUs.FirstName = firstName;
-            newUs.LastName = lastName;
-            
-            Console.WriteLine("Choose your gender, press 1 if you male or 2 if you female: ");
-            int gender = Convert.ToInt32(Console.ReadLine());
-
-            ChoiseGender(gender, newUs);
-            var getInf = newUs.ToString();
-            Console.WriteLine(getInf);
-
+            void GetUserAge()
+            {
+                Console.Write("Enter your age: ");
+                age = Convert.ToInt32(Console.ReadLine());
+                if (age > 0 && age < 120)
+                {
+                    checAge = age;
+                }
+                else
+                {
+                    Console.Write("Error! Pleace try again: ");
+                    age = Convert.ToInt32(Console.ReadLine());
+                    GetUserAge();
+                }
+            }
 
         }
        
 
-
-
-
-
-
-
-
-
-
-
-
-                //if (age > 0 || age < 120)
-                //{
-                //    age = Convert.ToInt32(record);
-                //}
-                //if (age <= 10)
-                //{
-                //    age = Convert.ToInt32(record);
-                //    Console.WriteLine("");
-                //}
-
-                //switch (age)
-                //{
-                //    case < 0:
-                //        Console.WriteLine("Error, pleace try again: ");
-                //        break;
-                //    case > 120:
-                //        Console.WriteLine("Error, pleace try again: ");
-                //        break;
-                //    case <= 10:
-                //        Console.WriteLine("");
-                //        age = Convert.ToInt32(record);
-                //        break;
-                //    default:
-                //        age = Convert.ToInt32(record);
-                //        break;
-            
     }
 }
