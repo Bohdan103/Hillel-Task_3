@@ -100,9 +100,7 @@ namespace Hillel_Task_3
                     checAge = age;
                 }
                 else
-                {
-                    Console.Write("Error! Pleace try again: ");
-                    age = Convert.ToInt32(Console.ReadLine());
+                {                  
                     GetUserAge();
                 }
             }
